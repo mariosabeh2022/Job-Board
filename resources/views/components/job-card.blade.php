@@ -9,7 +9,7 @@
     <div class="mb-4 flex items-center justify-between text-sm text-slate-500">
         <div class="flex space-x-4">
             <div>
-                Company Name
+                {{ $job->employer->company_name }}
             </div>
             <div>
                 {{$job->location}}
@@ -17,10 +17,14 @@
         </div>
         <div class="flex space-x-1 text-xs">
             <x-tag>
-                {{ Str::ucfirst($job->experience) }}
+                <a href="{{ route('jobs.index', parameters: ['experience' => $job->experience]) }}">
+                    {{ Str::ucfirst($job->experience) }}
+                </a>
             </x-tag>
             <x-tag>
-                {{ $job->category }}
+                <a href="{{ route('jobs.index', parameters: ['category' => $job->category]) }}">
+                    {{ $job->category }}
+                </a>
             </x-tag>
         </div>
     </div>
