@@ -32,7 +32,7 @@
                 No job applications yet
             </div>
             <div class="text-center">
-                Go find some <a class="text-indigo-500 hover:underline" href="{{ route('') }}">here!</a>
+                Go find some <a class="text-indigo-500 hover:underline" href="{{ route('jobs.index') }}">here!</a>
             </div>
         </div>
     @endforelse
