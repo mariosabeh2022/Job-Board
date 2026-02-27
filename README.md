@@ -1,4 +1,4 @@
-# ⚡ Laravel Job Board APP
+# 💼 Laravel Job Board APP
 
 A Laravel application running with Docker (MariaDB + Adminer).
 
